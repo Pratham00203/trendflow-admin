@@ -57,7 +57,7 @@ export default function AdminForm({ option }) {
             try {
                 const res = await axios({
                     method: "delete",
-                    url: `http://localhost:8000/api/admin/delete/${admin._id}`,
+                    url: `https://trendflow-admin-backend.onrender.com/api/admin/delete/${admin._id}`,
                     headers: {
                         'x-auth-token': localStorage.getItem("token")
                     }
@@ -76,7 +76,7 @@ export default function AdminForm({ option }) {
         try {
             const res = await axios({
                 method: 'post',
-                url: "http://localhost:8000/api/auth/register",
+                url: "https://trendflow-admin-backend.onrender.com/api/auth/register",
                 data: {
                     email: email.current.value,
                     password: password.current.value,
@@ -96,7 +96,7 @@ export default function AdminForm({ option }) {
         try {
             const res = await axios({
                 method: 'put',
-                url: "http://localhost:8000/api/admin/update/me",
+                url: "https://trendflow-admin-backend.onrender.com/api/admin/update/me",
                 data: {
                     email: email.current.value,
                     username: username.current.value

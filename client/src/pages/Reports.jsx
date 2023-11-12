@@ -16,7 +16,7 @@ export default function Reports() {
         try {
             const res = await axios({
                 method: "get",
-                url: `http://localhost:8000/api/post/reports/all`,
+                url: `https://trendflow-admin-backend.onrender.com/api/post/reports/all`,
                 headers: {
                     'x-auth-token': localStorage.getItem('token')
                 }

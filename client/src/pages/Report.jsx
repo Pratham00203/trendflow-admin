@@ -17,7 +17,7 @@ export default function Report() {
         try {
             const res = await axios({
                 method: 'get',
-                url: `http://localhost:8000/api/post/get/${reportid}`,
+                url: `https://trendflow-admin-backend.onrender.com/api/post/get/${reportid}`,
                 headers: {
                     'x-auth-token': localStorage.getItem('token')
                 }
@@ -33,7 +33,7 @@ export default function Report() {
             try {
                 const res = await axios({
                     method: "delete",
-                    url: `http://localhost:8000/api/post/delete/${reportid}/${postid}`,
+                    url: `https://trendflow-admin-backend.onrender.com/api/post/delete/${reportid}/${postid}`,
                     headers: {
                         'x-auth-token': localStorage.getItem("token")
                     }
@@ -54,7 +54,7 @@ export default function Report() {
             try {
                 const res = await axios({
                     method: "delete",
-                    url: `http://localhost:8000/api/post/report/${reportid}/delete`,
+                    url: `https://trendflow-admin-backend.onrender.com/api/post/report/${reportid}/delete`,
                     headers: {
                         'x-auth-token': localStorage.getItem("token")
                     }

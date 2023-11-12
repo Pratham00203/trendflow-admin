@@ -31,7 +31,7 @@ export default function App() {
     try {
       let res = await axios({
         method: "get",
-        url: "http://localhost:8000/api/auth/",
+        url: "https://trendflow-admin-backend.onrender.com/api/auth/",
         headers: {
           "x-auth-token": localStorage.getItem("token"),
         },

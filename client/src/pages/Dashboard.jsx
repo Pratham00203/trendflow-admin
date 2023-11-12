@@ -19,7 +19,7 @@ export default function Dashboard() {
         try {
             const res = await axios({
                 method: 'get',
-                url: "http://localhost:8000/dashboard",
+                url: "https://trendflow-admin-backend.onrender.com/dashboard",
                 headers: {
                     'x-auth-token': localStorage.getItem('token')
                 }

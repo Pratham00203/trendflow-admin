@@ -19,7 +19,7 @@ export default function Admins() {
             try {
                 const res = await axios({
                     method: "delete",
-                    url: `http://localhost:8000/api/admin/delete/${adminid}`,
+                    url: `https://trendflow-admin-backend.onrender.com/api/admin/delete/${adminid}`,
                     headers: {
                         'x-auth-token': localStorage.getItem("token")
                     }
@@ -40,7 +40,7 @@ export default function Admins() {
         try {
             const res = await axios({
                 method: 'get',
-                url: "http://localhost:8000/api/admin/all",
+                url: "https://trendflow-admin-backend.onrender.com/api/admin/all",
                 headers: {
                     'x-auth-token': localStorage.getItem("token")
                 }
